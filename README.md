@@ -2,9 +2,7 @@
 A small library to provide similar functions of the CRT unit from freepascal, but using ascii escape sequences instead of a custom driver.
 
 # What is wrong with CRT?
-The crt unit from freepascal does a weird thing on linux. It uses it's own video driver(not an actual kernel driver) to change the color of the text 
-in the terminal. This is not how you normally do this kind of thing. Usually you use ascii terminal escape sequences to change the color of text. That is 
-why i wrote this library. It provides similar functionality to the CRT unit of freepascal, but tailored to linux using ascii escape sequences.
+The crt unit from freepascal does a weird thing on linux. It puts the terminal in raw mode and does some special thing to get colored text on the screen and to provide other functionality. This is not how you normally do this kind of thing. Usually you use ansi escape sequences to change the color of text. That is why i wrote this library. It provides similar functionality to the CRT unit of freepascal, but tailored to linux using ascii escape sequences.
 
 # How do i use it?
 
